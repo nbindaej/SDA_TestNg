@@ -9,7 +9,7 @@
         </classes>
     </test>
 
-    <test name="Test 2 (invalid username and correct password">
+    <test name="Test 2 (wrong username and correct password">
         <parameter name="username" value="norah"></parameter>
         <parameter name="password" value="Password123"></parameter>
         <classes>
@@ -17,9 +17,25 @@
         </classes>
     </test>
 
-    <test name="Test 3 (correct username and invalid password">
+    <test name="Test 3 (correct username and wrong password">
         <parameter name="username" value="student"></parameter>
         <parameter name="password" value="norah123"></parameter>
+        <classes>
+            <class name="SDA.homeworks.day16.HW02"></class>
+        </classes>
+    </test>
+
+    <test name="Test 4 (wrong username and wrong password">
+        <parameter name="username" value="norah"></parameter>
+        <parameter name="password" value="12345"></parameter>
+        <classes>
+            <class name="SDA.homeworks.day16.HW02"></class>
+        </classes>
+    </test>
+
+    <test name="Test 5 (empty username and correct password">
+        <parameter name="username" value=""></parameter>
+        <parameter name="password" value="Password123"></parameter>
         <classes>
             <class name="SDA.homeworks.day16.HW02"></class>
         </classes>
