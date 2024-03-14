@@ -5,7 +5,10 @@
         <parameter name="username" value="student"></parameter>
         <parameter name="password" value="Password123"></parameter>
         <classes>
-            <class name="SDA.homeworks.day16.HW02"></class>
+            <class name="SDA.homeworks.day16.HW02">
+                <methods><include name="positiveTest"></include>
+                </methods>
+            </class>
         </classes>
     </test>
 
@@ -13,15 +16,23 @@
         <parameter name="username" value="norah"></parameter>
         <parameter name="password" value="Password123"></parameter>
         <classes>
-            <class name="SDA.homeworks.day16.HW02"></class>
+            <class name="SDA.homeworks.day16.HW02">
+                <methods><include name="negativeTest"></include>
+                </methods>
+            </class>
         </classes>
     </test>
+
 
     <test name="Test 3 (correct username and wrong password">
         <parameter name="username" value="student"></parameter>
         <parameter name="password" value="norah123"></parameter>
         <classes>
-            <class name="SDA.homeworks.day16.HW02"></class>
+            <class name="SDA.homeworks.day16.HW02">
+                <methods>
+                    <include name="negativeTest"></include>
+                </methods>
+            </class>
         </classes>
     </test>
 
@@ -29,7 +40,11 @@
         <parameter name="username" value="norah"></parameter>
         <parameter name="password" value="12345"></parameter>
         <classes>
-            <class name="SDA.homeworks.day16.HW02"></class>
+            <class name="SDA.homeworks.day16.HW02">
+                <methods>
+                    <include name="negativeTest"></include>
+                </methods>
+            </class>
         </classes>
     </test>
 
@@ -37,7 +52,11 @@
         <parameter name="username" value=""></parameter>
         <parameter name="password" value="Password123"></parameter>
         <classes>
-            <class name="SDA.homeworks.day16.HW02"></class>
+            <class name="SDA.homeworks.day16.HW02">
+                <methods>
+                    <include name="negativeTest"></include>
+                </methods>
+            </class>
         </classes>
     </test>
 
