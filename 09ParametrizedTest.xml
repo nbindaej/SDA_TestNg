@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+   <test name="Running Parametrized Test">
+       <parameter name="name" value="Norah"></parameter>
+       <parameter name="surname" value="Aziz"></parameter>
+       <parameter name="age" value="23"></parameter>
+       <classes>
+           <class name="SDA.test.day16.C03UsingParameters"></class>
+       </classes>
+
+   </test>
+</suite>
