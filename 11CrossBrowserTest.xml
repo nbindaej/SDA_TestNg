@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+   <test name="Chrome Browser Test">
+       <parameter name="browser" value="chrome"></parameter>
+       <classes>
+           <class name="SDA.test.day17.C05CrossBrowserTesting">
+               <methods>
+                   <include name="test1"></include>
+                   <include name="test2"></include>
+               </methods>
+           </class>
+       </classes>
+   </test>
+
+    <test name="Edge Browser Test">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="SDA.test.day17.C05CrossBrowserTesting">
+                <methods>
+                    <include name="test3"></include>
+                    <include name="test4"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

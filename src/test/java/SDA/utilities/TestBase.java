@@ -19,9 +19,9 @@ public abstract class TestBase {
     }
     @AfterMethod
     public void tearDown() throws InterruptedException {
-        if(driver != null){
+       /* if(driver != null){
             driver.quit();
             driver=null;
-        }
+        }*/
     }
 }
