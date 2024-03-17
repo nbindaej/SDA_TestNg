@@ -33,9 +33,11 @@ public class Task02 extends ParametrizeBrowserTestBase {
     public void test() throws InterruptedException {
 
         driver.get("http://crossbrowsertesting.github.io/todo-app.html");
+        Thread.sleep(1000);// It works correctly without waiting,but I use it to see what are happening slowly
         List<WebElement> checkboxes = driver.findElements(checkboxesByXpath);
         checkboxes.get(3).click();
         checkboxes.get(4).click();
+        Thread.sleep(1000);
 
         List<WebElement> checkboxesClicked = driver.findElements(checkboxClickedByXpath);
         Assert.assertEquals(checkboxesClicked.size(),2);
@@ -45,13 +47,16 @@ public class Task02 extends ParametrizeBrowserTestBase {
 
         WebElement addButton = driver.findElement(addButtonById);
         addButton.click();
+        Thread.sleep(1000);
 
         checkboxes = driver.findElements(checkboxesByXpath);
         Assert.assertEquals(checkboxes.size(),6);
         Assert.assertTrue(checkboxes.get(5).isDisplayed());
 
+
         WebElement archive = driver.findElement(archiveByLikeText);
         archive.click();
+        Thread.sleep(1000);
 
         checkboxes = driver.findElements(checkboxesByXpath);
         Assert.assertEquals(checkboxes.size(),4);
