@@ -2,15 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Classes Parallel Tests " parallel="classes" thread-count="3">
    <test name="Test 01 ">
-       <parameter name="browser" value="edge"></parameter>
        <classes>
-           <class name="SDA.test.day17.C05CrossBrowserTesting"></class>
+           <class name="SDA.test.day15.C04DependsOnMethods"></class>
        </classes>
    </test>
     
     <test name="Test 02">
         <classes>
-            <class name="SDA.test.day18.C03ParallelTestParameters"></class>
+            <class name="SDA.homeworks.day15.HW02"></class>
         </classes>
     </test>
     
