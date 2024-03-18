@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Classes Parallel Tests " parallel="classes" thread-count="3">
+   <test name="Test 01 ">
+       <parameter name="browser" value="edge"></parameter>
+       <classes>
+           <class name="SDA.test.day17.C05CrossBrowserTesting"></class>
+       </classes>
+   </test>
+    
+    <test name="Test 02">
+        <classes>
+            <class name="SDA.test.day18.C03ParallelTestParameters"></class>
+        </classes>
+    </test>
+    
+    <test name="Test 03">
+        <classes>
+            <class name="SDA.test.smokeTest.PositiveLoginTest"></class>
+        </classes>
+    </test>
+</suite>
